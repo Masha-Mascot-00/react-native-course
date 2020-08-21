@@ -42,8 +42,8 @@ document.querySelector(".scroll-to-top-btn").addEventListener("click", function 
 });
 
 
-const checkDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+const userPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-if(checkDarkMode){
+if(userPrefersDark){
   document.body.classList.add("dark-mode");
 }
